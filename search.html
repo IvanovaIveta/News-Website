@@ -88,9 +88,9 @@
         function retrieve(e) {
 
             e.preventDefault()
-            const apiKey = '19071541e4be4029bb40e09ce762f085'
+            const apiKey = 'e4a2839f5b4d41dea097b9a4f89abffa'
             let topic = input.value;
-            let url = 'https://newsapi.org/v2/everything?q=tesla&from=2021-05-13&sortBy=publishedAt&apiKey=19071541e4be4029bb40e09ce762f085'
+            let url = 'https://newsapi.org/v2/everything?qintitle='+topic+'&from=2021-05-14&sortBy=publishedAt&apiKey=e4a2839f5b4d41dea097b9a4f89abffa'
             fetch(url)
                 .then((res) => {
                     return res.json()
